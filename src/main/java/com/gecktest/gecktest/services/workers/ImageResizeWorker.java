@@ -1,4 +1,4 @@
-package com.gecktest.gecktest.domains.business;
+package com.gecktest.gecktest.services.workers;
 
 import com.gecktest.gecktest.domains.request.ImageResizeRequest;
 import com.gecktest.gecktest.services.FileService;
@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 
-import static com.gecktest.gecktest.Utils.getPathname;
+import static com.gecktest.gecktest.utils.Utils.getPathname;
 
 
 @Builder

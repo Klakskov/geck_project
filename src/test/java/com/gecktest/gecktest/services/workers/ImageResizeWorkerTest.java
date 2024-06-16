@@ -1,4 +1,4 @@
-package com.gecktest.gecktest.domains.business;
+package com.gecktest.gecktest.services.workers;
 
 import com.gecktest.gecktest.domains.request.ImageResizeRequest;
 import com.gecktest.gecktest.services.FileService;
@@ -19,7 +19,7 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
-public class ImageResizeWorkerTest {
+class ImageResizeWorkerTest {
 
     @Mock
     private FileService fileService;
@@ -40,22 +40,17 @@ public class ImageResizeWorkerTest {
 
     @Test
     public void testRun() throws Exception {
-        // Mocking
         BufferedImage mockBufferedImage = new BufferedImage(200, 200, BufferedImage.TYPE_INT_RGB);
         when(fileService.findByPath(any(Path.class))).thenReturn(mockBufferedImage);
 
         doNothing().when(fileService).saveImage(
                 any(BufferedImage.class), any(Path.class), any(String.class));
 
-        // Execute the method
         worker.run();
 
-        // Verify
         verify(fileService).findByPath(any(Path.class));
         verify(fileService).saveImage(any(BufferedImage.class),
                                       any(Path.class),
                                       eq("jpg"));
     }
-
-
 }

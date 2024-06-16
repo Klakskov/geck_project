@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import java.nio.file.Path;
 import java.util.List;
 
-import static com.gecktest.gecktest.Utils.UPLOAD_DIRECTORY;
+import static com.gecktest.gecktest.utils.Utils.UPLOAD_DIRECTORY;
 
 @Service
 @AllArgsConstructor

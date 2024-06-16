@@ -1,4 +1,4 @@
-package com.gecktest.gecktest;
+package com.gecktest.gecktest.utils;
 
 import java.nio.file.Path;
 

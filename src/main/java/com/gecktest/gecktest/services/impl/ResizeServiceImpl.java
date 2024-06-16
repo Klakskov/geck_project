@@ -1,9 +1,9 @@
 package com.gecktest.gecktest.services.impl;
 
-import com.gecktest.gecktest.domains.business.ImageResizeWorker;
 import com.gecktest.gecktest.domains.request.ImageResizeRequest;
 import com.gecktest.gecktest.services.FileService;
 import com.gecktest.gecktest.services.ImageResizeService;
+import com.gecktest.gecktest.services.workers.ImageResizeWorker;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

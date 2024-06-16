@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 
-import static com.gecktest.gecktest.Utils.getPathname;
+import static com.gecktest.gecktest.utils.Utils.getPathname;
 
 @Service
 @AllArgsConstructor
