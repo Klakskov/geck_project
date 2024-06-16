@@ -77,7 +77,8 @@ Its simple, there aren't much checking about the data and this could be improved
 image that aren't there you will not receive an error. I did this to simplify and not consume too much of my time.
 There are the 4 endpoints that was needed: create, delete, listAll and resize. All of them works fine but, as I told,
 there aren't checks, if you upload a file you will see an error. If you create a file with a name ending as the type of
-the image, this one will be a "fileName.imageType.png".
+the image, this one will be a "fileName.imageType.png". Also, the creation of exception handler and better logs could be
+greate to do too.
 
 I didn't do a WebHock, I thought about it but I didn't know what to do or how to do it in a simple way
 [ like, where should I send the mesasge?]
