@@ -43,13 +43,15 @@ If you want, you can see the uploaded images using the linked directory by addin
 In a simple way, just use:
 
 ```bash
-docker run -p 8080:8080 gecksoftware-app -v /opt/:/app/src/main/resources/images
+docker run -v "$(pwd)"/src/main/resources/images/:/app/src/main/resources/images -p 8080:8080 gecksoftware-app
 ```
+
+It will save the files into the folder "images" inside "resources". Remember that you must be at "gecktest" folder.
 
 The endpoints are available at:
 
 ```bash
-http://localhost:8080/swagger-ui/index.html#/image-controller-impl/resize
+http://localhost:8080/swagger-ui/index.html
 ```
 
 About Tests:

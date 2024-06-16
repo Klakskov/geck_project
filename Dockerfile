@@ -19,6 +19,7 @@ WORKDIR /app
 
 # Create the images directory in the final image
 RUN mkdir -p src/main/resources/images
+VOLUME /app/src/main/resources/images/
 
 # Copy the built application from the previous stage
 COPY --from=build /app/target/*.jar app.jar
