@@ -31,7 +31,6 @@ build/
 
 ### VS Code ###
 .vscode/
-/src/main/resources/images/*
 /mvnw
 /mvnw.cmd
 /.mvn/
